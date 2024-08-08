@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap Homework</title>
+  <link href="style.css" rel="stylesheet">
+  <!-- Task 1 (part 1): Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Task 2 (part 1): Create a navbar with the following links (all other links should be deleted or disabled) -->
+  <!-- Home (index.html), Cat Facts (facts.html), Learn More (https://en.wikipedia.org/wiki/Cat) -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="facts.html">Cat Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Cat">Learn More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Task 2 (part 2): Make sure facts.html has this same navbar so you can move back and forth. You will need to import Bootstrap in both files. -->
+  <!-- Extra Credit: Style the navbar and cards to be the same background color -->
+
+
+
+
+
+  <h1>Cats</h1>
+  <!-- Task 3: Add a carousel with 3 different cat images -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.inspiremore.com/wp-content/uploads/2022/03/cute-cats-3.jpg" class="d-block w-100" alt="Cat 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.inspiremore.com/wp-content/uploads/2022/03/cute-cats-11.jpg" class="d-block w-100" alt="Cat 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.inspiremore.com/wp-content/uploads/2022/03/cute-cats-12-scaled.jpg" class="d-block w-100" alt="Cat 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h2>Wild Cats</h2>
+  <!-- Task 4: Add 2 Bootstrap cards with different wildcats and descriptions of them -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230426135537-sand-cat-1.jpg?c=original" class="card-img-top" alt="Wild Cat 1">
+    <div class="card-body">
+      <p class="card-text">The sand cat is a small wild cat that inhabits sandy and stony deserts far from water sources. With its sandy to light grey fur, it is well camouflaged in a desert environment. Its head-and-body length ranges from 39–52 cm with a 23–31 cm long tail.</p>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmgMKyp3nhCmKF0QwdRaeV3Sy_3QKcxynoQ8UgZ6cVJg0DBwPZ" class="card-img-top" alt="Wild Cat 2">
+    <div class="card-body">
+      <p class="card-text">The European wildcat is a small wildcat species native to continental Europe, Scotland, Turkey and the Caucasus. It inhabits forests from the Iberian Peninsula, Italy, Central and Eastern Europe to the Caucasus.</p>
+    </div>
+  </div>
+  <!-- Task 1 (part 2): Link Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
